@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f7fb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #3a3a3a;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.toggle-container label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #6cc5f7;
+    outline: none;
+}
+
+.validation-message {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.valid {
+    color: #4CAF50;
+}
+
+.invalid {
+    color: #f44336;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #6cc5f7;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #5bb3e0;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: #e02e2e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}

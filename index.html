@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Validation Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Regex Validation Form</h1>
+        <div class="toggle-container">
+            <label for="validationToggle">Use Regex Validation:</label>
+            <input type="checkbox" id="validationToggle" checked>
+        </div>
+        <form id="validationForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+                <span class="validation-message" id="fullNameValidation"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <span class="validation-message" id="emailValidation"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                <span class="validation-message" id="phoneValidation"></span>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Choose a username" required>
+                <span class="validation-message" id="usernameValidation"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Choose a password" required>
+                <span class="validation-message" id="passwordValidation"></span>
+            </div>
+            <div class="form-group">
+                <label for="zipCode">ZIP Code</label>
+                <input type="text" id="zipCode" placeholder="Enter your ZIP code" required>
+                <span class="validation-message" id="zipCodeValidation"></span>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="text" id="dob" placeholder="DD/MM/YYYY" required>
+                <span class="validation-message" id="dobValidation"></span>
+            </div>
+            <div class="button-group">
+                <button type="submit" id="submitBtn">Submit</button>
+                <button type="reset" id="resetBtn">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div class="container" id="resultContainer" style="display: none;">
+        <h2>Submitted Data</h2>
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
